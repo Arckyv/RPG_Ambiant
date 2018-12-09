@@ -8,11 +8,14 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/platine.css">
 </head>
 <body>
-    <audio id="jukeBox"  autoplay="autoplay">
-    	<source src="./assets/sounds/loser.mp3">
-    </audio>
-    <button id="play"></button>
-    <button id="pause"></button>
-    <script type="text/javascript" src="assets/js/platine.js"></script>
+  <nav>
+    <input id="audio_in" type="file" name="audio_in" value="">
+  </nav>
+
+  <div id="displayer">
+    <audio id="jukeBox" src="./assets/sounds/loser.mp3"></audio>
+  </div>
+
+  <script type="text/javascript" src="assets/js/platine.js"></script>
 </body>
 </html>
