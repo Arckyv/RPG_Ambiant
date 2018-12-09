@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ambiant Gesture</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/platine.css">
-</head>
-<body>
-  <nav>
-    <input id="audio_in" type="file" name="audio_in" value="">
-  </nav>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Ambiant Gesture</title>
 
-  <div id="displayer">
-    <audio id="jukeBox" src="./assets/sounds/loser.mp3"></audio>
-  </div>
+      <link rel="stylesheet" type="text/css" href="./assets/css/platine.css">
 
-  <script type="text/javascript" src="assets/js/platine.js"></script>
-</body>
+      <script type="text/javascript" src="assets/js/platine.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <nav id="audio_nav">
+        <input id="audio_in" type="file" name="audio_in" multiple="multiple">
+      </nav>
+
+      <div id="displayer">
+        <!-- playerWrapper sample -->
+        <div class="player_wrapper">
+          <label for="loser.mp3">loser.mp3</label>
+          <audio id="loser.mp3" class="jukeBox" src="./assets/sounds/loser.mp3" controls="true"></audio>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
